@@ -1,0 +1,5 @@
+{
+    "port":5000,
+    "jwtSecret": " Hoory task for Mher",
+    "mongoUrl": "mongodb+srv://Mher:MA5ucraw@cluster0.zslga.azure.mongodb.net/app?retryWrites=true&w=majority"
+}

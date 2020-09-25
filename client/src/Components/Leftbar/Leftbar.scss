@@ -1,0 +1,84 @@
+.leftbar-main-area {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.leftbar-area {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: linear-gradient(13.08deg, #600BFB 0%, #6B54FB 100%);
+    flex-grow: 0;
+    padding: 30px 37px;
+    .underlogoline {
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        margin: 30px -10px;
+        width: 196px;
+    }
+    .leftbar-steps {
+        font-family: 'Roboto', sans-serif;
+        .leftbar-step {
+            color: #FFFFFF;
+            font-size: 16px;
+            margin-bottom: 36px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            transition: height 0.3s, margin-bottom 0.3s;
+        }
+        .step-chackbox {
+            width: 18px;
+            height: 18px;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+        }
+        .leftbar-step-activ {
+            font-weight: bold;
+            color: #FFFFFF;
+            font-size: 16px;
+            margin-bottom: 36px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            transition: height 0.3s, margin-bottom 0.3s;
+            width: 105%;
+            .step-chackbox-activ {
+                width: 18px;
+                height: 18px;
+                border: 1px solid #FFFFFF;
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: 10px;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 5px;
+                    top: 2px;
+                    width: 4px;
+                    height: 8px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                    display: block;
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+.leftbarlink {
+    color: #ffffff;
+    
+    
+} 

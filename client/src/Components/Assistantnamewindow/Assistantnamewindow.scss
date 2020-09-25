@@ -1,0 +1,94 @@
+.allwidth {
+    width: 100%;
+}
+.Assistantwindow-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    .Assnw-form-area {
+        text-align: center;
+        width: 540px;
+        .Assnw-icon-area {
+            margin-bottom: 45px;
+            text-align: center;
+            display: inline-block;
+        }
+    }
+
+    .Assnw-text-area {
+        color: #444;
+        font-family: 'Roboto',
+        sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .Assnw-textfield-section {
+            margin: 36px 0;
+            height: 60px;
+         .Assnw-textfield-area {
+             position: relative;
+             width: 100%;
+             display: flex;
+             align-items: center;
+             background-color: #F7F7FA;
+             border-radius: 8px;
+              input {
+                  font-size: 24px;
+                  text-align: center;
+                  flex: 1;
+                  width: 100%;
+                  height: 100%;
+                  background-color: #F7F7FA;
+                  padding: 15px;
+                  color: #444;
+                  font-family: 'Roboto',
+                  sans-serif;
+                  font-size: 16px;
+                  line-height: 19px
+              }
+              ::-webkit-input-placeholder {
+                  /* Edge */
+                  color: rgb(122, 121, 121);
+                  font-size: 20px;
+              }
+
+              :-ms-input-placeholder {
+                  /* Internet Explorer 10-11 */
+              color: rgb(122, 121, 121);
+                  font-size: 20px;
+              }
+
+              ::placeholder {
+                  color: rgb(122, 121, 121);
+                  font-size: 20px;
+              }
+
+             .Assnw-textfield {
+                 border-radius: 8px;
+                
+             }
+         }
+    }
+   
+    .Assnw-btn {
+        height: 42px;
+        border-radius: 21px;
+        background-color: #00C67B;
+        box-shadow: 0 6px 10px -5px rgba(0, 198, 123, 0.35);
+        padding: 0 28px;
+        color: #FFFFFF;
+        font-family: 'Roboto',
+        sans-serif;
+        font-size: 16px;
+        min-width: 150px;
+    }
+    
+}
+
+.error-msg-area {
+    margin-left: 377px;
+    margin-top: 10px;
+    color: red;
+}

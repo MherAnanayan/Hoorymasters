@@ -1,0 +1,68 @@
+.Assistantstyle-area {
+    text-align: center;
+    .Assistantname-text {
+        color: #444;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        text-align: center;
+    }
+    .Assistant-icon-area {
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+        margin-bottom: 50px;
+    }
+    .Assistant-color-text {
+        color: #444;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        text-align: center;
+    }
+    .Assnw-next-btn {
+        width: 200px;
+        height: 42px;
+        border-radius: 21px;
+        background-color: #00C67B;
+        box-shadow: 0 6px 10px -5px rgba(0, 198, 123, 0.35);
+        padding: 0 28px;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+    .Assistant-colors-area {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto;
+
+        .Assistant-color {
+
+            height: 75px;
+            width: 75px;
+            padding: 5px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            margin: 0 4px;
+             
+            .Assistant-color-in {
+
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                border: cornflowerblue;
+            }
+
+           
+        }
+
+    }
+}
+
+
+.svg-style {
+    display: flex;
+}
