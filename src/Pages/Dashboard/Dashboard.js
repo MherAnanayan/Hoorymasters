@@ -1,30 +1,32 @@
 import React, { useEffect, useState } from "react";
 import Gravatar from "react-gravatar";
-import "./Dashboard.scss";
 import { connect } from "react-redux";
-
-
 import { useHistory } from "react-router-dom";
-
 import { AiOutlineFileSearch } from "react-icons/ai";
+import LogoutButton from '../../resources/icons/Logout';
+import "./Dashboard.scss";
+import { Logout } from "../../resources/icons";
+
 
 
     
-const Dashboard = () => {
+const Dashboard = (user) => {
     
 
     return (
+
         <div className="dashboard">
             <div className="header">
                 <div className="userInfo">
-                    <Gravatar className="avatar"  />
+                    <Gravatar className="avatar" />
                     <div className="name-email">
-                        <div className="name">{`'{user.firstName} {user.lastName}'`}</div>
-                        <div className="email">{'user.email'}</div>
+                        <div className="name">{`'${user.firstname} ${user.lastname}'`}</div>
+                        <div className="email">{user.email}</div>
                     </div>
                 </div>
                 <button  text="Logout" className="logout">
-                    
+                   { "Logout"}
+                    <LogoutButton/>
                 </button>
             </div>
             <div className="content">
@@ -49,7 +51,10 @@ const Dashboard = () => {
 
     }
 const mapStateToProps = (state) => ({
-    user: state.user,
+    firstname: state.Registrapplay.registrData.firstname,
+    lastname: state.Registrapplay.registrData.lastname,
+    email: state.Registrapplay.registrData.email,
+   
 });
 
 const mapDispatchToProps = {

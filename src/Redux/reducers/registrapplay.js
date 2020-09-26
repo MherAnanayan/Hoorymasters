@@ -25,13 +25,13 @@ export default function (state = initialState, { type, payload }) {
         case RegistrApply.ADD_ASSISTANT_NAME_DATA:
             return {
                 ...state,
-                assistantNameDate: payload.name,
+                assistantNameDate: payload,
             };
         case RegistrApply.ADD_ASSISTANT_STYLE_DATA:
             return {
                 ...state,
-                assistantStyleDate: payload.name,
-            }
+                assistantStyleDate: payload,
+            };
             
         default: 
             return state 

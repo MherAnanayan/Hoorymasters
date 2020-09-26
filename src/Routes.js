@@ -19,7 +19,7 @@ const Routes = () => {
                 <Route path="/assistantstyle" exact component={Assistantstyle} />
                 <Route path="/assistantaccount" exact component={Assistantaccount} />
                 <Route path="/assistantdone" exact component={Assistantdone} />
-                <Route path="/assistantdone" exact component={Assistantdone} />
+                <Route path="/Dashboard" exact component={Dashboard} />
             </Switch>
 
         </BrowserRouter>
